@@ -12,6 +12,10 @@ test('this test should pass', (expect) => {
     const expected2 = 'hi finley!';
     const actual2 = myFunction('finley');
     expect.equal(actual2, expected2, 'finley');
+
+    const expected3 = 'hi shy!';
+    const actual3 = myFunction('shy');
+    expect.equal(actual3, expected3, 'shy');
 });
 
 skip('this test should be skipped', (expect) => {
