@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { myFunction } from '../functions.js';
+import { addExclamationPoints, myFunction, returnAsAnArray } from '../functions.js';
 
 const { test, skip } = QUnit;
 
@@ -24,4 +24,20 @@ skip('this test should be skipped', (expect) => {
     const actual = true;
 
     expect.equal(actual, expected);
+});
+
+test('addExclamationPoints should add 3 exclamation points', (expect) => {
+    const expected = 'bunny rabbit!!!';
+
+    const actual = addExclamationPoints('bunny rabbit');
+
+    expect.equal(actual, expected, 'bunny rabbit');
+});
+
+test('returnAsAnArray should return inputs as an array', (expect) => {
+    const expected = [1, 2, 3];
+
+    const actual = returnAsAnArray(1, 2, 3);
+
+    expect.deepEqual(actual, expected);
 });

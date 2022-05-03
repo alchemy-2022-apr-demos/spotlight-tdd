@@ -14,8 +14,8 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(booger) {
+    return `${booger}!!!`;
 }
 
 // This function should take in a number and multiply it by seven
@@ -80,7 +80,7 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return [firstNumber, secondNumber, thirdNumber];
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
